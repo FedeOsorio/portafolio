@@ -1,0 +1,32 @@
+[
+    {
+        "puesto": "Analista de Sistemas",
+        "empresa": "Grant Thornton Argentina",
+        "fecha": "Jul 2022 - Actualidad",
+        "info": "Analisis de sistemas"
+    },
+    {
+        "puesto": "Soporte IT",
+        "empresa": "DOW Chemical Argentina",
+        "fecha": "May 2021 - Julio 2022",
+        "info": "Analisis de sistemas"
+    },
+    {
+        "puesto": "Técnico de Campo",
+        "empresa": "Logitec SA",
+        "fecha": "Nov 2020 - Mayo 2021",
+        "info": "Analisis de sistemas"
+    },
+    {
+        "puesto": "Técnico de Soporte y Reparación",
+        "empresa": "Compumundo SA",
+        "fecha": "Sep 2016 - Abril 2019",
+        "info": "Analisis de sistemas"
+    },
+    {
+        "puesto": "Soporte Técnico",
+        "empresa": "Atento",
+        "fecha": "Dic 2013 - Septiembre 2016",
+        "info": "Analisis de sistemas"
+    }
+]

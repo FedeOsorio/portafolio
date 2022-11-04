@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Signika Negative', sans-serif;
+  background-color: white;
+}
+
+.gridContainer {
+  font-family: 'Asap', sans-serif;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  grid-template:
+    "mainTop mainTop" 100px
+    "contacto contacto" 70px
+    "mainLeft aside" auto /
+    43% auto;
+}
+
+.gridContainer > * {
+  border-radius: 3px;
+
+}
+
+.mainTop {
+  padding: 20px;
+  grid-area: mainTop;
+  text-align: center;
+
+}
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.mainLeft {
+  grid-area: mainLeft;
+}
+
+.tecnologias {
+  text-align: center;
+  font-size: .95em;
+}
+
+.tecnologias .iconsTecnologias {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconsTecnologias img {
+  height: 50px;
+}
+
+.workExperience {
+  text-align: center;
+  padding: 40px;
+  font-size: .95em;
+}
+
+.titleText {
+  font-size: .95rem;
+}
+
+.experiences {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: .9rem;
+  text-align: left;
+  margin-left: 6%;
+}
+
+.experiences p {
+  font-size: 0.85rem;
+}
+
+.experiences b {
+  color: #363636;
+  font-size: 0.9rem;
+}
+
+.aside {
+  grid-area: aside;
+  text-align: center;
+  padding: 20px;
+}
+
+.expContent {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 73%;
+}
+
+.titleContent {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 43%;
+  justify-content: center;
+}
+
+.swapButton {
+  appearance: none;
+  position: relative;
+  top: 4.2px;
+  content: url(icons/alter.png);
+  height: 20px;
+  width: 20px;
+  box-shadow: 0px 0px 4px 0.2px rgba(0, 0, 0, 0.753);
+  padding: 2px;
+  border-radius: 100px;
+}
+
+.academyButton {
+  position: relative;
+  top: 4.2px;
+  content: url(icons/alter.png);
+  height: 20px;
+  width: 20px;
+  box-shadow: 0px 0px 4px 0.2px rgba(0, 0, 0, 0.781);
+  padding: 2px;
+  border-radius: 100px;
+}
+
+.swapButton:hover {
+  background-color: #92b6ec8f;
+}
+
+.swapButton:active {
+  background-color: #759cd6e0;
+}
+
+.academyButton:hover {
+  background-color: #92b6ec8f;
+}
+
+.academyButton:active {
+  background-color: #759cd6e0;
+}
+
+.swapButton:checked {
+  appearance: none;
+}
+.academyButton:checked {
+  appearance: none;
+}
+
+.checkButton {
+  appearance: none;
+  position: relative;
+  left: 6px;
+  content: url(icons/button-more.png);
+  height: 20px;
+  width: 20px;
+  box-shadow: 0px 0px 2px 0.1px rgba(0, 0, 0, 0.753);
+  border-radius: 100px;
+}
+
+.checkButton:checked {
+  appearance: none;
+  content: url(icons/minus.png);
+  box-shadow: 0px 0px 2px 0.1px rgba(0, 0, 0, 0.753);
+  border-radius: 100px;
+}
+
+.hiddenText {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.checkButton:checked ~ .hiddenText {
+  top: 50px;
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
