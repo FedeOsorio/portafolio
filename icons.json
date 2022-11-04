@@ -1,19 +1,19 @@
 [
     {
-        "name": "REACT",
-        "imgSrc": "icons/atom.png"
-    },
-    {
-        "name": "JAVASCRIPT",
-        "imgSrc": "icons/js.png"
+        "name": "HTML",
+        "imgSrc": "icons/html-5 (1).png"
     },
     {
         "name": "CSS",
         "imgSrc": "icons/css-3.png"
     },
     {
-        "name": "HTML",
-        "imgSrc": "icons/html-5 (1).png"
+        "name": "JAVASCRIPT",
+        "imgSrc": "icons/js.png"
+    },
+    {
+        "name": "REACT",
+        "imgSrc": "icons/atom.png"
     },
     {
         "name": "MySQL",
