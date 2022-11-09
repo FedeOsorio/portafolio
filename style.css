@@ -5,57 +5,84 @@
 }
 
 body {
-  font-family: 'Signika Negative', sans-serif;
-  background-color: white;
+  margin: 20px 30px 30px 30px;
+  font-family: "Signika Negative", sans-serif;
+  background-image: url("fondoblanco.jpeg");
+}
+
+:root{
+  --boxShadow: #2b2b2b;
 }
 
 .gridContainer {
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   display: grid;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-width: none;
   grid-template:
     "mainTop mainTop" 100px
-    "contacto contacto" 70px
+    "contacto contacto" 40px
     "mainLeft aside" auto /
-    43% auto;
+    44% auto;
 }
 
 .gridContainer > * {
   border-radius: 3px;
-
 }
 
 .mainTop {
-  padding: 20px;
   grid-area: mainTop;
   text-align: center;
+  margin: 0px 20px 0px 20px;
+ }
 
+.aboutMe{
+  font-style: italic;
+  text-align: center;
+  font-size: .90rem;
+  margin: 0 auto;
+  padding: 10px 5px 10px 5px;
 }
 
 .contacto {
   grid-area: contacto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 40px;
-  width: 100%;
+  box-shadow: 0px 3px 6px .8px #2b2b2b;
+  margin: 0px 20px 0px 20px;
+  border: 2px solid #2b2b2b;
+  border-radius: 14px;
+  padding-top: 8px;
 }
 
-.mainLeft {
+.nav{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.navItem{
+  font-weight: 600;
+}
+
+.mainLeftContainer {
   grid-area: mainLeft;
+  margin: 20px 20px 0px 20px;
+  border: 2px solid #2b2b2b;
+  box-sizing: border-box;
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px .8px var(--boxShadow);
 }
 
 .tecnologias {
+  padding-top: 20px;
   text-align: center;
-  font-size: .95em;
+  font-size: 0.95em;
 }
 
 .tecnologias .iconsTecnologias {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .iconsTecnologias img {
@@ -64,47 +91,57 @@ body {
 
 .workExperience {
   text-align: center;
-  padding: 40px;
-  font-size: .95em;
+  position: relative;
+  font-size: 0.95em;
+  padding-top: 20px;
 }
 
 .titleText {
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .experiences {
   display: inline-flex;
   flex-direction: column;
-  width: 100%;
-  font-size: .9rem;
+  margin: 0px 90px 0px 90px;
+  font-size: 0.9rem;
   text-align: left;
-  margin-left: 6%;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .experiences p {
   font-size: 0.85rem;
+  color: #353535;
 }
 
 .experiences b {
-  color: #363636;
+  color: #202020;
   font-size: 0.9rem;
 }
 
 .aside {
   grid-area: aside;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px 20px 0px 20px;
+  border: 2px solid #2b2b2b;
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px .8px var(--boxShadow);
 }
 
 .expContent {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 73%;
+  width: 100%;
 }
 
 .titleContent {
   display: inline-flex;
+  position: relative;
+  left: 5px;
   flex-direction: row;
   flex-wrap: wrap;
   width: 43%;
