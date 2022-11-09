@@ -9,54 +9,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">  
 </head>
 
 <body>
 
-    <div class="gridContainer">
+       <div class="gridContainer">
 
         <div class="mainTop">
             <h1>FEDERICO OSORIO</h1>
             <h3>Front-End Developer</h3>
-            <p>Sobre mi</p>
-
-            <div class="contacto">
-                Contacto - LinkedIn - Correo - Descargar CV
+            <p class="aboutMe">Soy desarrollador web enfocado al front-end, cuento
+                con +4 años de experiencia en el área de IT y
+                actualmente estoy buscando insertarme
+                laboralmente en el mundo del desarrollo.</p>
+        </div>
+        <div class="contacto">
+            <div class="navContainer">
+                <ul class="nav">
+                    <li class="navItem"> Contacto </li>
+                    <li class="navItem"> LinkedIn </li>
+                    <li class="navItem"> Correo </li>
+                    <li class="navItem"> Descargar CV </li>
+                </ul>
             </div>
         </div>
 
-        <div class="información mainLeft">
-            <div class="tecnologias">
-                <h3><u>HABILIDADES</u></h3>
+        <div>
+            <div class="mainLeftContainer">
+                <div class="tecnologias">
+                    <h3><u>HABILIDADES</u></h3>
+                    <br>
+                    <div class="iconsTecnologias">
+                        <!-- Inyección DOM-->
+                    </div>
+                </div>
+
+                <div class="workExperience">
+                    <div class="titleContent"></div>
+                    <input type="checkbox" class="swapButton" id="swapExp" />
+                    <div class="experiences">
+                        <!-- Inyección DOM-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="proyectos aside">
+                <h4> PROYECTOS </h4>
                 <br>
-                <div class="iconsTecnologias">
-                    <!-- Inyección DOM-->
-                </div>
+                <a href="#"><img src="#">404 Error - Responsive</a>
+                <br>
+                <br>
+                <p>El listado de proyectos se irá actualizando progresivamente..</p>
             </div>
-
-            <div class="workExperience">
-                <div class="titleContent"></div>
-                <input type="checkbox" class="swapButton" id="swapExp" />
-                <div class="experiences">
-                    <!-- Inyección DOM-->
-                </div>
-
-            </div>
-        </div>
-
-        <div class="proyectos aside">
-            <h4> Proyectos </h4>
-            <a href="https://fedeo10.github.io/404-Responsive" target="_blank"><img src="https://fedeo10.github.io/404-Responsive">404 Error - Responsive</a>
-            <br>
-            <br>
-            <p>El listado de proyectos se irá actualizando progresivamente..</p>
         </div>
     </div>
-
+    
     <script src="dom.js"></script>
-
 </body>
-
 </html>
