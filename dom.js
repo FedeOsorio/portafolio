@@ -38,7 +38,7 @@ const rendAcademy = (array) => {
     <div class="expContent">
       <p><b>${exp.empresa}</b> (${exp.fecha})</p>
       <input type="checkbox" class="checkButton" id="check1" />
-      <p class="hiddenText">Información Pendiente</p>
+      <p class="hiddenText">${exp.info}</p>
       <label for="check1"></label>
     </div>
         `;
