@@ -1,14 +1,14 @@
 [
     {
-        "puesto": "Técnico de Soporte y Reparación",
-        "empresa": "Compumundo SA",
-        "fecha": "Sep 2016 - Abril 2019",
-        "info": "Analisis de sistemas"
+        "puesto": "React JS",
+        "empresa": "Coderhouse",
+        "fecha": "Octubre 2022 - Diciembre 2022",
+        "info": "En curso"
     },
     {
-        "puesto": "Soporte Técnico",
-        "empresa": "Atento",
-        "fecha": "Dic 2013 - Septiembre 2016",
-        "info": "Analisis de sistemas"
+        "puesto": "Javascript",
+        "empresa": "Coderhouse",
+        "fecha": "Agosto 2022 - Octubre 2022",
+        "info": "Finalizado"
     }
 ]
